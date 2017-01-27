@@ -6,7 +6,8 @@ import 'package:js/js.dart';
 
 @Component(selector: 'object-budget-list')
 @View(
-    templateUrl: 'object_budget_list_component.html', directives: const [RouterLink])
+    templateUrl: 'object_budget_list_component.html',
+    directives: const [RouterLink])
 class ObjectBudgetListComponent implements OnInit, OnDestroy {
   static const String route_name = "ObjectBudgetList";
   static const String route_path = "objectBudgetList";
@@ -20,12 +21,9 @@ class ObjectBudgetListComponent implements OnInit, OnDestroy {
 
   ObjectBudgetListComponent(this._router, this._alertService) {}
 
+  @override
+  void ngOnInit() {}
 
   @override
-  void ngOnInit() {
-  }
-
-  @override
-  void ngOnDestroy() {
-  }
+  void ngOnDestroy() {}
 }
